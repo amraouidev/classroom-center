@@ -2,6 +2,13 @@ import GameCard from '@/components/game-card';
 
 const topPicks = [
   {
+    title: 'Granny',
+    description: 'Escape the haunted house without getting caught by the terrifying Granny.',
+    imageSrc: 'https://placehold.co/400x300.png',
+    aiHint: 'haunted house',
+    href: '/granny',
+  },
+  {
     title: 'Pixel Racer',
     description: 'Weave through traffic in this high-speed retro racer.',
     imageSrc: 'https://placehold.co/400x300.png',
@@ -23,18 +30,11 @@ const topPicks = [
     href: '#',
   },
   {
-    title: 'Soccer Stars',
-    description: 'Score amazing goals and become a soccer legend.',
+    title: 'Granny Creepy House',
+    description: 'Explore a terrifying old house full of creepy secrets and twisted rooms.',
     imageSrc: 'https://placehold.co/400x300.png',
-    aiHint: 'soccer game',
-    href: '#',
-  },
-  {
-    title: 'Dungeon Quest',
-    description: 'Explore dark dungeons and find legendary treasures.',
-    imageSrc: 'https://placehold.co/400x300.png',
-    aiHint: 'fantasy dungeon',
-    href: '#',
+    aiHint: 'creepy house',
+    href: '/granny-creepy-house',
   },
     {
     title: 'Hoops Master',

@@ -24,7 +24,12 @@ const gameCategories = [
     name: '🔥 New Releases',
     href: '/new-games',
     icon: Sparkles,
-    games: [{ name: 'Pixel Racer', href: '#' }, { name: 'Block Stacker', href: '#' }],
+    games: [
+      { name: 'Granny', href: '/granny' }, 
+      { name: 'Granny Nightmare', href: '/granny-nightmare' },
+      { name: 'Granny Creepy House', href: '/granny-creepy-house' },
+      { name: 'Granny 2', href: '/granny-2' },
+    ],
   },
   {
     name: '🏫 Classroom Games',
