@@ -85,7 +85,10 @@ const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
               <Link
                 href={category.href}
                 className="flex items-center gap-3"
-                onClick={() => setOpen(false)}
+                onClick={(e) => {
+                  e.stopPropagation(); // Prevent accordion from toggling
+                  setOpen(false);
+                }}
               >
                 <category.icon className="h-5 w-5" />
                 {category.name}
@@ -125,7 +128,7 @@ export default function Sidebar({ open, setOpen }: SidebarProps) {
       </Sheet>
 
       {/* Desktop Sidebar */}
-      <div className="hidden h-screen w-64 border-r bg-card lg:block sticky top-0">
+      <div className="hidden h-screen w-56 border-r bg-card lg:block sticky top-0">
         <SidebarContent setOpen={setOpen} />
       </div>
     </>

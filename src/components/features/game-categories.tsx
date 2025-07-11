@@ -6,32 +6,32 @@ const categories = [
     title: 'Puzzle & Logic',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'abstract puzzle',
-    href: '#',
+    href: '/puzzle-games',
   },
   {
     title: 'Action & Fighting',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'dynamic fight',
-    href: '#',
+    href: '/action-games',
   },
   {
     title: 'Racing & Driving',
     id: 'driving-games',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'fast car',
-    href: '#',
+    href: '/driving-games',
   },
   {
     title: 'Sports & Basketball',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'basketball action',
-    href: '#',
+    href: '/sports-games',
   },
   {
     title: 'Adventure & RPG',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'fantasy landscape',
-    href: '#',
+    href: '/adventure-games',
   },
 ];
 

@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="flex items-center gap-4 text-sm">
                 <Link href="#" className="hover:text-foreground transition-colors">Docs</Link>
                 <Link href="#" className="hover:text-foreground transition-colors">Contact</Link>
-                <Link href="#" className="hover:text-foreground transition-colors">Classroom</Link>
+                <Link href="/classroom" className="hover:text-foreground transition-colors">Classroom</Link>
             </div>
             <div className="text-center text-sm">
                 <p>&copy; {currentYear} Unblocked Games G+. All rights reserved.</p>
