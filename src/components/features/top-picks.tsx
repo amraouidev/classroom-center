@@ -47,7 +47,7 @@ const topPicks = [
 
 export default function TopPicks() {
   return (
-    <section className="bg-card py-16 sm:py-20">
+    <section id="top-picks" className="bg-card py-16 sm:py-20 scroll-mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-headline font-bold tracking-tight text-foreground sm:text-4xl">

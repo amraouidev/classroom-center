@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'GameZone Unblocked',
+  title: 'Unblocked Games G+',
   description: 'Explore the Best Free Unblocked Games Online!',
 };
 

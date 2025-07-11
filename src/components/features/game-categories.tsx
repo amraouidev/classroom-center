@@ -16,6 +16,7 @@ const categories = [
   },
   {
     title: 'Racing & Driving',
+    id: 'driving-games',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'fast car',
     href: '#',
@@ -36,7 +37,7 @@ const categories = [
 
 export default function GameCategories() {
   return (
-    <section id="categories" className="py-16 sm:py-20">
+    <section id="categories" className="py-16 sm:py-20 scroll-mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-headline font-bold tracking-tight text-foreground sm:text-4xl">
@@ -48,14 +49,15 @@ export default function GameCategories() {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {categories.map((category) => (
-            <GameCard
-              key={category.title}
-              imageSrc={category.imageSrc}
-              title={category.title}
-              buttonText="Explore"
-              href={category.href}
-              aiHint={category.aiHint}
-            />
+            <div id={category.id} key={category.title} className="scroll-mt-20">
+              <GameCard
+                imageSrc={category.imageSrc}
+                title={category.title}
+                buttonText="Explore"
+                href={category.href}
+                aiHint={category.aiHint}
+              />
+            </div>
           ))}
         </div>
       </div>
