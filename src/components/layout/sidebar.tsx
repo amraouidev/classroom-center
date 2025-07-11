@@ -70,18 +70,18 @@ type SidebarProps = {
 };
 
 const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
-  <div className="flex h-full flex-col">
-    <div className="flex h-16 items-center border-b px-4">
+  <div className="flex h-full flex-col text-white bg-[#1e1e1e]">
+    <div className="flex h-16 items-center border-b border-gray-700 px-4">
       <Link href="/" className="flex items-center gap-2 font-semibold">
         <Puzzle className="h-6 w-6 text-primary" />
-        <span>Unblocked Games G+</span>
+        <span className="text-white">Unblocked Games G+</span>
       </Link>
     </div>
     <ScrollArea className="flex-1">
       <Accordion type="multiple" className="w-full px-4 py-2">
         {gameCategories.map((category) => (
-          <AccordionItem value={category.href} key={category.href}>
-            <AccordionTrigger className="text-base hover:no-underline">
+          <AccordionItem value={category.href} key={category.href} className="border-b-gray-700">
+            <AccordionTrigger className="text-base hover:no-underline text-white hover:text-primary">
               <Link
                 href={category.href}
                 className="flex items-center gap-3"
@@ -100,7 +100,7 @@ const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
                   <li key={game.name}>
                     <Link
                       href={game.href}
-                      className="block text-muted-foreground transition-colors hover:text-foreground"
+                      className="block text-gray-400 transition-colors hover:text-primary"
                       onClick={() => setOpen(false)}
                     >
                       {game.name}
@@ -122,13 +122,13 @@ export default function Sidebar({ open, setOpen }: SidebarProps) {
     <>
       {/* Mobile Sidebar */}
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="left" className="w-64 p-0 lg:hidden">
+        <SheetContent side="left" className="w-64 p-0 lg:hidden bg-[#1e1e1e] border-r-0">
           <SidebarContent setOpen={setOpen} />
         </SheetContent>
       </Sheet>
 
       {/* Desktop Sidebar */}
-      <div className="hidden h-screen w-52 border-r bg-card lg:block sticky top-0">
+      <div className="hidden h-screen w-52 border-r border-gray-700 bg-[#1e1e1e] lg:block sticky top-0">
         <SidebarContent setOpen={setOpen} />
       </div>
     </>

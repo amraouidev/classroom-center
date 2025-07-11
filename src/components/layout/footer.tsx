@@ -4,10 +4,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t" id="classroom-center">
-      <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 text-muted-foreground">
+    <footer className="bg-[#2c2c2c] text-[#cccccc] border-t border-gray-700" id="classroom-center">
+      <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="space-y-8 text-center">
-          <h2 className="text-2xl font-bold text-foreground">
+          <h2 className="text-2xl font-bold text-white">
             ❄️ Unblocked Games Classroom Center G+ – The Go-To Destination for Free Online Fun ❄️
           </h2>
           <p>
@@ -21,7 +21,7 @@ export default function Footer() {
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-foreground">🎯 Why Unblocked Games Classroom Center?</h3>
+            <h3 className="text-xl font-bold text-white">🎯 Why Unblocked Games Classroom Center?</h3>
             <ul className="list-disc list-inside space-y-2 text-left mx-auto max-w-md">
               <li>Massive collection of action, strategy, racing, and adventure games</li>
               <li>Fully optimized for school networks and Chromebooks, including Classroom 6x</li>
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-foreground">📈 Popular HTML5 Games Students Can’t Get Enough Of:</h3>
+            <h3 className="text-xl font-bold text-white">📈 Popular HTML5 Games Students Can’t Get Enough Of:</h3>
             <ul className="list-none space-y-1">
               <li>1v1.lol</li>
               <li>Roblox</li>
@@ -48,23 +48,23 @@ export default function Footer() {
             From educational titles to fun multiplayer experiences, everything is here—ready when you are.
           </p>
 
-          <p className="font-bold text-foreground">
+          <p className="font-bold text-white">
             🔖 Bookmark Unblocked Games G+ today and unlock a world of excitement in just one click!
           </p>
 
-          <div className="space-y-4 pt-4 border-t mt-8">
-            <h3 className="text-xl font-bold text-foreground">🏫 Classroom Center</h3>
+          <div className="space-y-4 pt-4 border-t border-gray-700 mt-8">
+            <h3 className="text-xl font-bold text-white">🏫 Classroom Center</h3>
             <p>
               Explore a diverse selection of unblocked games designed specifically for safe and engaging play at school. Ideal for students of all ages, our collection blends entertainment with learning—turning every break into a fun and meaningful experience!
             </p>
           </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-4 text-sm">
-                <Link href="#" className="hover:text-foreground transition-colors">Docs</Link>
-                <Link href="#" className="hover:text-foreground transition-colors">Contact</Link>
-                <Link href="/classroom" className="hover:text-foreground transition-colors">Classroom</Link>
+                <Link href="#" className="hover:text-[#ff9800] transition-colors">Docs</Link>
+                <Link href="#" className="hover:text-[#ff9800] transition-colors">Contact</Link>
+                <Link href="/classroom" className="hover:text-[#ff9800] transition-colors">Classroom</Link>
             </div>
             <div className="text-center text-sm">
                 <p>&copy; {currentYear} Unblocked Games G+. All rights reserved.</p>
