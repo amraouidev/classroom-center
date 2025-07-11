@@ -7,6 +7,7 @@ import GameCategories from '@/components/features/game-categories';
 import TopPicks from '@/components/features/top-picks';
 import WhyChooseUs from '@/components/features/why-choose-us';
 import Sidebar from '@/components/layout/sidebar';
+import BookmarkButton from '@/components/bookmark-button';
 
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -24,6 +25,7 @@ export default function Home() {
         </main>
         <Footer />
       </div>
+      <BookmarkButton />
     </div>
   );
 }

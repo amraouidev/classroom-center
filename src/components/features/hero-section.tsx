@@ -20,13 +20,13 @@ export default function HeroSection() {
               <Link href="#categories">Start Playing Now</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="transition-transform duration-300 hover:scale-105">
-              <Link href="#top-picks">🎯 New Games</Link>
+              <Link href="/new-games">🎯 New Games</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="transition-transform duration-300 hover:scale-105">
-              <Link href="#classroom-center">🏫 Classrooms</Link>
+              <Link href="/classroom">🏫 Classrooms</Link>
             </Button>
              <Button asChild size="lg" variant="outline" className="transition-transform duration-300 hover:scale-105">
-              <Link href="#driving-games">🚗 Driving Games</Link>
+              <Link href="/driving-games">🚗 Driving Games</Link>
             </Button>
           </div>
         </div>

@@ -9,7 +9,6 @@ import {
   Compass,
   School,
   Sparkles,
-  X,
 } from 'lucide-react';
 import {
   Accordion,
@@ -17,52 +16,51 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const gameCategories = [
+    {
+    name: '🔥 New Releases',
+    href: '/new-games',
+    icon: Sparkles,
+    games: [{ name: 'Pixel Racer', href: '#' }, { name: 'Block Stacker', href: '#' }],
+  },
+  {
+    name: '🏫 Classroom Games',
+    href: '/classroom',
+    icon: School,
+    games: [{ name: 'Math Blaster', href: '#' }, { name: 'Word Finder', href: '#' }],
+  },
+   {
+    name: '🚗 Driving Games',
+    href: '/driving-games',
+    icon: Car,
+    games: [{ name: 'Pixel Racer', href: '#' }, { name: 'Moto X3M', href: '#' }],
+  },
   {
     name: '🎮 Action Games',
-    id: 'action-games',
+    href: '/action-games',
     icon: Gamepad2,
     games: [{ name: 'Galactic Battle', href: '#' }, { name: 'Stickman Fight', href: '#' }],
   },
   {
     name: '🧠 Puzzle & Strategy',
-    id: 'puzzle-strategy',
+    href: '/puzzle-games',
     icon: Brain,
     games: [{ name: 'Block Stacker', href: '#' }, { name: 'Sudoku', href: '#' }],
   },
   {
     name: '🏀 Sports & Basketball',
-    id: 'sports-basketball',
+    href: '/sports-games',
     icon: Dribbble,
     games: [{ name: 'Soccer Stars', href: '#' }, { name: 'Hoops Master', href: '#' }],
   },
   {
-    name: '🛣️ Racing & Driving',
-    id: 'racing-driving',
-    icon: Car,
-    games: [{ name: 'Pixel Racer', href: '#' }, { name: 'Moto X3M', href: '#' }],
-  },
-  {
     name: '🧭 Adventure & RPG',
-    id: 'adventure-rpg',
+    href: '/adventure-games',
     icon: Compass,
     games: [{ name: 'Dungeon Quest', href: '#' }, { name: 'Fantasy Explorer', href: '#' }],
-  },
-  {
-    name: '📚 Classroom Games',
-    id: 'classroom-games',
-    icon: School,
-    games: [{ name: 'Math Blaster', href: '#' }, { name: 'Word Finder', href: '#' }],
-  },
-  {
-    name: '🔥 New Releases',
-    id: 'top-picks',
-    icon: Sparkles,
-    games: [{ name: 'Pixel Racer', href: '#' }, { name: 'Block Stacker', href: '#' }],
   },
 ];
 
@@ -82,10 +80,10 @@ const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
     <ScrollArea className="flex-1">
       <Accordion type="multiple" className="w-full px-4 py-2">
         {gameCategories.map((category) => (
-          <AccordionItem value={category.id} key={category.id}>
+          <AccordionItem value={category.href} key={category.href}>
             <AccordionTrigger className="text-base hover:no-underline">
               <Link
-                href={`#${category.id === 'action-games' ? 'categories' : category.id}`}
+                href={category.href}
                 className="flex items-center gap-3"
                 onClick={() => setOpen(false)}
               >
@@ -99,7 +97,7 @@ const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
                   <li key={game.name}>
                     <Link
                       href={game.href}
-                      className="block text-muted-foreground hover:text-foreground transition-colors"
+                      className="block text-muted-foreground transition-colors hover:text-foreground"
                       onClick={() => setOpen(false)}
                     >
                       {game.name}
@@ -121,13 +119,13 @@ export default function Sidebar({ open, setOpen }: SidebarProps) {
     <>
       {/* Mobile Sidebar */}
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="left" className="p-0 w-80 lg:hidden">
+        <SheetContent side="left" className="w-64 p-0 lg:hidden">
           <SidebarContent setOpen={setOpen} />
         </SheetContent>
       </Sheet>
 
       {/* Desktop Sidebar */}
-      <div className="hidden lg:block w-80 border-r bg-card h-screen sticky top-0">
+      <div className="hidden h-screen w-64 border-r bg-card lg:block sticky top-0">
         <SidebarContent setOpen={setOpen} />
       </div>
     </>
