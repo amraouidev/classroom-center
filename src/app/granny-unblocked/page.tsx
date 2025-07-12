@@ -36,6 +36,11 @@ const grannyGames = [
     href: '/granny-prison-escape-unblocked',
     description: 'Break out of a horrifying prison in this Granny chapter.',
   },
+  {
+    title: 'Granny Online',
+    href: '/granny-online',
+    description: 'Play the horror escape game free in your browser.',
+  },
 ];
 
 export default function GrannyUnblockedPillarPage() {

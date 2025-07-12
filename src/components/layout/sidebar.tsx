@@ -30,6 +30,7 @@ const gameCategories = [
       { name: 'Granny 2', href: '/granny-2-unblocked' },
       { name: 'Granny Creepy House', href: '/granny-creepy-house-unblocked' },
       { name: 'Granny Prison Escape', href: '/granny-prison-escape-unblocked' },
+      { name: 'Granny Online', href: '/granny-online' },
     ],
   },
   {
@@ -76,8 +77,8 @@ type SidebarProps = {
 };
 
 const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
-  <div className="flex h-full flex-col text-foreground bg-background">
-    <div className="flex h-16 items-center border-b px-4">
+  <div className="flex h-full flex-col text-foreground bg-card">
+    <div className="flex h-16 items-center border-b border-border px-4">
       <Link href="/" className="flex items-center gap-2 font-semibold">
         <Puzzle className="h-6 w-6 text-primary" />
         <span className="text-foreground">Unblocked Games G+</span>
@@ -128,13 +129,13 @@ export default function Sidebar({ open, setOpen }: SidebarProps) {
     <>
       {/* Mobile Sidebar */}
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="left" className="w-64 p-0 lg:hidden bg-background border-r-0">
+        <SheetContent side="left" className="w-64 p-0 lg:hidden bg-card border-r-0">
           <SidebarContent setOpen={setOpen} />
         </SheetContent>
       </Sheet>
 
       {/* Desktop Sidebar */}
-      <div className="hidden h-screen w-52 border-r border-border bg-background lg:block sticky top-0">
+      <div className="hidden h-screen w-52 border-r border-border bg-card lg:block sticky top-0">
         <SidebarContent setOpen={setOpen} />
       </div>
     </>

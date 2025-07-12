@@ -29,12 +29,19 @@ const newGames = [
     aiHint: 'creepy house',
     href: '/granny-creepy-house-unblocked',
   },
-    {
+  {
     title: 'Granny Prison Escape',
     description: 'A prison escape version of the thrilling Granny game.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'creepy prison',
     href: '/granny-prison-escape-unblocked',
+  },
+  {
+    title: 'Granny Online',
+    description: 'Play the horror escape game free in your browser.',
+    imageSrc: 'https://placehold.co/400x300.png',
+    aiHint: 'horror escape',
+    href: '/granny-online',
   },
 ];
 
