@@ -51,7 +51,7 @@ export default function TopPicks() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-headline font-bold tracking-tight text-foreground sm:text-4xl">
-            📈 Top Picks
+            🎄🧿Unbanned Games G+ offers easy access to a wide range of games for endless fun! 🧿🎄
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
             Check out the games that everyone is playing right now.
