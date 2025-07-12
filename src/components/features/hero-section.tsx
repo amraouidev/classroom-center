@@ -26,7 +26,7 @@ export default function HeroSection() {
               <Link href="/classroom">🏫 Classrooms</Link>
             </Button>
              <Button asChild size="lg" variant="outline" className="transition-transform duration-300 hover:scale-105">
-              <Link href="/driving-games">🚗 Driving Games</Link>
+              <Link href="/driving-games-unblocked">🚗 Driving Games</Link>
             </Button>
           </div>
         </div>

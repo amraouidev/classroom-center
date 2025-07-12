@@ -1,0 +1,32 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+
+export const metadata: Metadata = {
+  title: 'Escape The Car – Unblocked Puzzle Game',
+  description: 'Play Escape The Car unblocked for free. A fun puzzle game where you need to escape from a car.',
+};
+
+export default function GamePage() {
+  return (
+    <section className="py-12 sm:py-16">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            Escape The Car
+          </h1>
+        </div>
+        <div className="mt-10 text-lg leading-8 text-muted-foreground space-y-6">
+          <p>
+            You're trapped in a car! Use your wits to solve puzzles and find a way to escape in this challenging unblocked game.
+          </p>
+          <div className="text-center mt-8">
+            <Button asChild>
+                <Link href="/driving-games-unblocked">More Driving Games</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

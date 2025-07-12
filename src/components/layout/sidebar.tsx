@@ -41,9 +41,13 @@ const gameCategories = [
   },
    {
     name: '🚗 Driving Games',
-    href: '/driving-games',
+    href: '/driving-games-unblocked',
     icon: Car,
-    games: [{ name: 'Pixel Racer', href: '#' }, { name: 'Moto X3M', href: '#' }],
+    games: [
+        { name: 'Drift Boss', href: '/drift-boss' }, 
+        { name: 'Eggy Car', href: '/eggy-car' },
+        { name: 'Slow Roads', href: '/slow-roads' }
+    ],
   },
   {
     name: '🎮 Action Games',
