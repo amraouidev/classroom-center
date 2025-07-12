@@ -9,6 +9,7 @@ export default function Footer() {
                 <Link href="#" className="hover:text-primary transition-colors">Contact</Link>
                 <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
                 <a href="https://sites.google.com/view/classrooms-workspace/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Classroom</a>
+                <a href="https://sites.google.com/view/docs-document/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Document</a>
             </div>
             <div className="text-center text-sm text-muted-foreground">
                 <p>&copy; Unblocked Games G+. All rights reserved.</p>
