@@ -16,9 +16,6 @@ export default function HeroSection() {
             Your ultimate destination for fun, free, and unblocked HTML5 games. Perfect for school, home, or anywhere you want to play!
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform duration-300 hover:scale-105">
-              <Link href="#categories">Start Playing Now</Link>
-            </Button>
             <Button asChild size="lg" variant="outline" className="transition-transform duration-300 hover:scale-105">
               <Link href="/new-games">🎯 New Games</Link>
             </Button>
