@@ -21,7 +21,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const gameCategories = [
     {
-    name: '🔥 New Releases',
+    name: 'New Games',
     href: '/new-games',
     icon: Sparkles,
     games: [
