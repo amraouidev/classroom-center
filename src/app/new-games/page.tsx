@@ -424,36 +424,53 @@ export default function NewGamesPage() {
             />
           ))}
         </div>
-        <div className="text-center mt-16">
-          <div className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground space-y-4">
-            <p>
-              Welcome to the New Games section—your ultimate destination for the freshest unblocked games online. Whether you’re on a Chromebook at school or relaxing at home, this collection is updated regularly with the most exciting, trending, and safe-to-play titles on the web.
+        <div className="mt-16 bg-card p-8 rounded-lg border border-border">
+          <div className="mx-auto max-w-4xl text-muted-foreground space-y-6">
+            <h2 className="text-center text-3xl font-headline font-bold text-foreground sm:text-4xl">
+              🎮 What Are Unblocked Games and Why Are They So Popular?
+            </h2>
+            
+            <p className="text-lg leading-relaxed">
+              Unblocked games are free online games that work on school Chromebooks and network-restricted devices — no downloads, no VPNs required. Whether you’re at school, at work, or just taking a break, these browser-based games are perfect for fast, stress-free entertainment.
             </p>
-            <p>
-              These new games cover everything from racing and puzzles to shooters and multiplayer fun. Best of all? They’re all browser-based, free to play, and require no downloads or VPN.
+
+            <p className="text-lg leading-relaxed">
+              From high-speed racing and mind-bending puzzles to retro arcade and adventure titles, <strong>New Unblocked Games</strong> let you enjoy fun, creativity, and skill-building — right from your browser. No installations, just click and play.
             </p>
-            <p>Play top titles like:</p>
-            <ul className="list-disc list-inside">
-              <li>Granny Unblocked</li>
-              <li>Eggy Car</li>
-              <li>Slope</li>
-              <li>Parking Fury 3</li>
-              <li>Drift Boss</li>
-              <li>Slow Roads</li>
-              <li>…and 40+ more added weekly!</li>
+
+            <h3 className="text-2xl font-bold text-foreground pt-4">✨ Why Students & Gamers Love New Unblocked Games:</h3>
+            <ul className="list-disc list-inside space-y-2 text-lg">
+              <li>⚡ Play instantly — perfect for Chromebooks and school use</li>
+              <li>🔒 Safe and teacher-approved gaming</li>
+              <li>🧠 Boost focus, logic, and creative thinking</li>
+              <li>🎨 Includes puzzle, strategy, arcade, and casual games</li>
+              <li>🌐 100% browser-based – no downloads or setup</li>
             </ul>
-            <h2 className="text-2xl font-bold text-foreground pt-4">🔥 Why Play New Games Here?</h2>
-            <ul className="list-none space-y-2">
-                <li>🎯 Fully unblocked and school-friendly</li>
-                <li>🚀 Updated regularly with hot releases</li>
-                <li>🧩 Wide variety: Action, Racing, Puzzle, Horror & more</li>
-                <li>⚡ Loads instantly – no install needed</li>
+
+            <h3 className="text-2xl font-bold text-foreground pt-4">🚀 Top New Unblocked Games You Should Try:</h3>
+            <ul className="list-disc list-inside space-y-2 text-lg">
+              <li>2048 – addictive math puzzle fun</li>
+              <li>Run 3 – endless running in outer space</li>
+              <li>Happy Wheels – physics-based racing madness</li>
+              <li>Roblox – social sandbox experience</li>
+              <li>Shell Shockers – egg-based FPS action</li>
             </ul>
-            <p className="pt-4">
-              Looking for something new and fun to play right now? This is the spot.
+
+            <h3 className="text-2xl font-bold text-foreground pt-4">🛡️ How to Play Unblocked Games Safely:</h3>
+            <ul className="list-disc list-inside space-y-2 text-lg">
+              <li>✅ Stick to HTTPS websites (secure connections)</li>
+              <li>✅ Avoid downloads — use only web-based HTML5 games</li>
+              <li>✅ Don’t enter personal information</li>
+              <li>✅ Set a time limit and balance study & play</li>
+              <li>✅ Use ad-blockers if needed to avoid distractions</li>
+            </ul>
+
+            <p className="text-lg leading-relaxed pt-4">
+              Whether you're looking for quick breaks between classes or hours of fun after school, our <strong>New Unblocked Games</strong> section has you covered. Perfectly optimized for <strong>Google Chrome, School Chromebooks, and Classroom 6x</strong> setups — no VPN or firewall bypass needed.
             </p>
-            <p className="font-bold text-primary">
-              ⭐ Bookmark this page to stay ahead of the curve with every new release.
+
+            <p className="text-xl font-bold text-center text-primary pt-6">
+              🎯 Ready to start playing? Bookmark our <strong>New Unblocked Games</strong> page and enjoy your favorite games—anytime, anywhere.
             </p>
           </div>
         </div>
