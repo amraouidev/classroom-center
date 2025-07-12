@@ -1,4 +1,11 @@
-export default function GrannyPage() {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Granny Unblocked – Play Free Online',
+  description: 'Play the original Granny Unblocked online for free. Escape the haunted house, solve puzzles, and survive the nightmare—no downloads required.',
+};
+
+export default function GrannyUnblockedGamePage() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -15,7 +22,7 @@ export default function GrannyPage() {
                 This unblocked version allows you to play anywhere, whether at school, home, or work, without restrictions. With its thrilling gameplay, spine-chilling atmosphere, and clever puzzles, Granny Unblocked keeps you on edge every moment.
             </p>
             <p>
-                Perfect for fans of horror and escape room games, Granny Unblocked provides hours of entertainment while improving your critical thinking skills. Experience the adrenaline rush and test your courage today!
+                Perfect for fans of horror and escape room games, Granny Unblocked provides hours of entertainment while improving your critical thinking skills.
             </p>
             <p className="font-bold text-accent">
                 Start your escape adventure now and play Granny Unblocked for free!

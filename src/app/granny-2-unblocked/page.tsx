@@ -1,4 +1,11 @@
-export default function Granny2Page() {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Granny 2 Unblocked – Escape Horror Game Online',
+  description: 'Play Granny 2 Unblocked online. Now with Grandpa! Escape a bigger house with more puzzles in this terrifying free horror survival game.',
+};
+
+export default function Granny2UnblockedPage() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -15,10 +22,10 @@ export default function Granny2Page() {
                 This unblocked version allows you to play anywhere, whether at school, home, or work, without restrictions. With its thrilling gameplay, spine-chilling atmosphere, and clever puzzles, Granny Unblocked keeps you on edge every moment.
             </p>
             <p>
-                Perfect for fans of horror and escape room games, Granny Unblocked provides hours of entertainment while improving your critical thinking skills. Experience the adrenaline rush and test your courage today!
+                Perfect for fans of horror and escape room games, Granny Unblocked provides hours of entertainment while improving your critical thinking skills.
             </p>
             <p className="font-bold text-accent">
-                Start your escape adventure now and play Granny Unblocked for free!
+                Start your escape adventure now and play Granny 2 Unblocked for free!
             </p>
         </div>
       </div>

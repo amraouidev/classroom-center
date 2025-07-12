@@ -2,11 +2,11 @@ import GameCard from '@/components/game-card';
 
 const topPicks = [
   {
-    title: 'Granny',
-    description: 'Escape the haunted house without getting caught by the terrifying Granny.',
+    title: 'Granny Unblocked',
+    description: 'The ultimate hub for all versions of the terrifying escape-horror game.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'haunted house',
-    href: '/granny',
+    href: '/granny-unblocked',
   },
   {
     title: 'Pixel Racer',
@@ -34,7 +34,7 @@ const topPicks = [
     description: 'Explore a terrifying old house full of creepy secrets and twisted rooms.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'creepy house',
-    href: '/granny-creepy-house',
+    href: '/granny-creepy-house-unblocked',
   },
     {
     title: 'Hoops Master',

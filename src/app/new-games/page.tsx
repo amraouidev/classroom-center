@@ -2,32 +2,39 @@ import GameCard from '@/components/game-card';
 
 const newGames = [
   {
+    title: 'Granny Unblocked',
+    description: 'The ultimate hub for all versions of the terrifying escape-horror game.',
+    imageSrc: 'https://placehold.co/400x300.png',
+    aiHint: 'haunted house',
+    href: '/granny-unblocked',
+  },
+  {
     title: 'Granny',
     description: 'Escape the haunted house without getting caught by the terrifying Granny.',
     imageSrc: 'https://placehold.co/400x300.png',
-    aiHint: 'haunted house',
-    href: '/granny',
-  },
-  {
-    title: 'Granny Nightmare',
-    description: 'A prison escape version of the thrilling Granny game.',
-    imageSrc: 'https://placehold.co/400x300.png',
-    aiHint: 'creepy prison',
-    href: '/granny-nightmare',
-  },
-  {
-    title: 'Granny Creepy House',
-    description: 'Explore a terrifying old house full of creepy secrets and twisted rooms.',
-    imageSrc: 'https://placehold.co/400x300.png',
-    aiHint: 'creepy house',
-    href: '/granny-creepy-house',
+    aiHint: 'scary granny',
+    href: '/granny-unblocked-game',
   },
   {
     title: 'Granny 2',
     description: 'The sequel to the suspenseful survival horror game.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'dark room',
-    href: '/granny-2',
+    href: '/granny-2-unblocked',
+  },
+  {
+    title: 'Granny Creepy House',
+    description: 'Explore a terrifying old house full of creepy secrets and twisted rooms.',
+    imageSrc: 'https://placehold.co/400x300.png',
+    aiHint: 'creepy house',
+    href: '/granny-creepy-house-unblocked',
+  },
+    {
+    title: 'Granny Prison Escape',
+    description: 'A prison escape version of the thrilling Granny game.',
+    imageSrc: 'https://placehold.co/400x300.png',
+    aiHint: 'creepy prison',
+    href: '/granny-prison-escape-unblocked',
   },
 ];
 

@@ -1,4 +1,11 @@
-export default function GrannyNightmarePage() {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Granny Prison Escape Unblocked',
+  description: 'Can you escape the prison in Granny Prison Escape Unblocked? Play this free online horror game and solve the puzzles to break free.',
+};
+
+export default function GrannyPrisonEscapeUnblockedPage() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -15,10 +22,10 @@ export default function GrannyNightmarePage() {
                 This unblocked version allows you to play anywhere, whether at school, home, or work, without restrictions. With its thrilling gameplay, spine-chilling atmosphere, and clever puzzles, Granny Unblocked keeps you on edge every moment.
             </p>
             <p>
-                Perfect for fans of horror and escape room games, Granny Unblocked provides hours of entertainment while improving your critical thinking skills. Experience the adrenaline rush and test your courage today!
+                Perfect for fans of horror and escape room games, Granny Unblocked provides hours of entertainment while improving your critical thinking skills.
             </p>
             <p className="font-bold text-accent">
-                Start your escape adventure now and play Granny Unblocked for free!
+                Start your escape adventure now and play Granny Prison Escape Unblocked for free!
             </p>
         </div>
       </div>

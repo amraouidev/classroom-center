@@ -25,10 +25,11 @@ const gameCategories = [
     href: '/new-games',
     icon: Sparkles,
     games: [
-      { name: 'Granny', href: '/granny' }, 
-      { name: 'Granny Nightmare', href: '/granny-nightmare' },
-      { name: 'Granny Creepy House', href: '/granny-creepy-house' },
-      { name: 'Granny 2', href: '/granny-2' },
+      { name: 'Granny Unblocked', href: '/granny-unblocked' }, 
+      { name: 'Granny', href: '/granny-unblocked-game' }, 
+      { name: 'Granny 2', href: '/granny-2-unblocked' },
+      { name: 'Granny Creepy House', href: '/granny-creepy-house-unblocked' },
+      { name: 'Granny Prison Escape', href: '/granny-prison-escape-unblocked' },
     ],
   },
   {
