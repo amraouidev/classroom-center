@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-card text-card-foreground border-t border-border" id="classroom-center">
@@ -67,7 +66,7 @@ export default function Footer() {
                 <Link href="/classroom" className="hover:text-primary transition-colors">Classroom</Link>
             </div>
             <div className="text-center text-sm text-muted-foreground">
-                <p>&copy; {currentYear} Unblocked Games G+. All rights reserved.</p>
+                <p>&copy; 2024 Unblocked Games G+. All rights reserved.</p>
             </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 
 export default function ClassroomPage() {
-    const currentYear = new Date().getFullYear();
   return (
     <div className="bg-card border-t" id="classroom-center">
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 text-muted-foreground">
