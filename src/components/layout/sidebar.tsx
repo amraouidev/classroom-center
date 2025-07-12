@@ -413,15 +413,22 @@ type SidebarProps = {
 const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => {
   const router = useRouter();
 
-  const handleCategoryClick = (e: React.MouseEvent, href: string, isExternal?: boolean) => {
-    if (isExternal) {
-      window.open(href, '_blank', 'noopener,noreferrer');
-      e.preventDefault();
-    } else {
+  const handleLinkClick = (href: string, isExternal?: boolean) => {
+    if (!isExternal) {
       router.push(href);
+    } else {
+      window.open(href, '_blank', 'noopener,noreferrer');
     }
-    // The accordion trigger will handle expanding/collapsing
+    setOpen(false);
   };
+
+  const handleTriggerClick = (e: React.MouseEvent, href: string, isExternal?: boolean, hasGames?: boolean) => {
+    if (isExternal || !hasGames) {
+      e.preventDefault();
+      handleLinkClick(href, isExternal);
+    }
+  };
+
 
   return (
     <div className="flex h-full flex-col text-card-foreground bg-card">
@@ -435,15 +442,23 @@ const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => {
         <Accordion type="multiple" className="w-full px-4 py-2">
           {gameCategories.map((category) => (
             <AccordionItem value={category.href} key={category.href} className="border-b-border">
-              <AccordionTrigger 
-                className="text-base hover:no-underline text-foreground hover:text-primary"
-                onClick={(e) => handleCategoryClick(e, category.href, category.isExternal)}
-              >
-                <div className="flex items-center gap-3">
-                  <category.icon className="h-5 w-5" />
-                  {category.name}
-                </div>
-              </AccordionTrigger>
+                <AccordionTrigger
+                  onClick={(e) => handleTriggerClick(e, category.href, category.isExternal, category.games.length > 0)}
+                  className="text-base hover:no-underline text-foreground hover:text-primary"
+                >
+                  <div className="flex items-center gap-3">
+                    <category.icon className="h-5 w-5" />
+                    {category.isExternal ? (
+                      <a href={category.href} target="_blank" rel="noopener noreferrer" className="flex-1" onClick={(e) => e.stopPropagation()}>
+                        {category.name}
+                      </a>
+                    ) : (
+                      <Link href={category.href} className="flex-1 text-left" onClick={(e) => e.stopPropagation()}>
+                        {category.name}
+                      </Link>
+                    )}
+                  </div>
+                </AccordionTrigger>
               <AccordionContent>
                 <ul className="space-y-2 pl-8">
                   {category.games.map((game) => (
@@ -485,5 +500,3 @@ export default function Sidebar({ open, setOpen }: SidebarProps) {
     </>
   );
 }
-
-    
