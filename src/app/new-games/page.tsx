@@ -248,7 +248,7 @@ const newGames = [
   },
   {
     title: 'Rooftop Snipers',
-    description: 'A chaotic physics-based sniping game for one or two players.',
+    description: 'A chaotic, physics-based sniping game for one or two players.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'pixel snipers',
     href: '/new-games/rooftop-snipers',
@@ -408,7 +408,7 @@ export default function NewGamesPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-3xl font-headline font-bold tracking-tight text-foreground sm:text-4xl">
-            🎮 New Games – Discover the Latest Unblocked Games
+            🎮🎄Unblocked Games G+Discover the Latest New Games🎄🎮
           </h1>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
