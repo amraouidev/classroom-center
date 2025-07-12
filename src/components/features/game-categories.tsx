@@ -47,7 +47,7 @@ export default function GameCategories() {
             Find your new favorite game from our diverse collection.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((category) => (
             <div id={category.id} key={category.title} className="scroll-mt-20">
               <GameCard
