@@ -1,3 +1,4 @@
+
 'use client';
 import Link from 'next/link';
 import {
@@ -18,6 +19,7 @@ import {
 } from '@/components/ui/accordion';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { useRouter } from 'next/navigation';
 
 const gameCategories = [
     {
@@ -408,57 +410,62 @@ type SidebarProps = {
   setOpen: (open: boolean) => void;
 };
 
-const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
-  <div className="flex h-full flex-col text-card-foreground bg-card">
-    <div className="flex h-16 items-center border-b border-border px-4">
-      <Link href="/" className="flex items-center gap-2 font-semibold">
-        <Puzzle className="h-6 w-6 text-primary" />
-        <span className="text-foreground">Unblocked Games G+</span>
-      </Link>
-    </div>
-    <ScrollArea className="flex-1">
-      <Accordion type="multiple" className="w-full px-4 py-2">
-        {gameCategories.map((category) => (
-          <AccordionItem value={category.href} key={category.href} className="border-b-border">
-            <AccordionTrigger className="text-base hover:no-underline text-foreground hover:text-primary">
-              <a
-                href={category.href}
-                className="flex items-center gap-3"
-                onClick={(e) => {
-                  if (!category.isExternal) {
-                    e.preventDefault(); 
-                    // Let the AccordionTrigger handle the click for internal links
-                  }
-                  // For external links, the default 'a' tag behavior will trigger
-                }}
-                target={category.isExternal ? '_blank' : '_self'}
-                rel={category.isExternal ? 'noopener noreferrer' : ''}
+const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => {
+  const router = useRouter();
+
+  const handleCategoryClick = (e: React.MouseEvent, href: string, isExternal?: boolean) => {
+    if (isExternal) {
+      window.open(href, '_blank', 'noopener,noreferrer');
+      e.preventDefault();
+    } else {
+      router.push(href);
+    }
+    // The accordion trigger will handle expanding/collapsing
+  };
+
+  return (
+    <div className="flex h-full flex-col text-card-foreground bg-card">
+      <div className="flex h-16 items-center border-b border-border px-4">
+        <Link href="/" className="flex items-center gap-2 font-semibold" onClick={() => setOpen(false)}>
+          <Puzzle className="h-6 w-6 text-primary" />
+          <span className="text-foreground">Unblocked Games G+</span>
+        </Link>
+      </div>
+      <ScrollArea className="flex-1">
+        <Accordion type="multiple" className="w-full px-4 py-2">
+          {gameCategories.map((category) => (
+            <AccordionItem value={category.href} key={category.href} className="border-b-border">
+              <AccordionTrigger 
+                className="text-base hover:no-underline text-foreground hover:text-primary"
+                onClick={(e) => handleCategoryClick(e, category.href, category.isExternal)}
               >
-                <category.icon className="h-5 w-5" />
-                {category.name}
-              </a>
-            </AccordionTrigger>
-            <AccordionContent>
-              <ul className="space-y-2 pl-8">
-                {category.games.map((game) => (
-                  <li key={game.name}>
-                    <Link
-                      href={game.href}
-                      className="block text-muted-foreground transition-colors hover:text-primary"
-                      onClick={() => setOpen(false)}
-                    >
-                      {game.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </ScrollArea>
-  </div>
-);
+                <div className="flex items-center gap-3">
+                  <category.icon className="h-5 w-5" />
+                  {category.name}
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <ul className="space-y-2 pl-8">
+                  {category.games.map((game) => (
+                    <li key={game.name}>
+                      <Link
+                        href={game.href}
+                        className="block text-muted-foreground transition-colors hover:text-primary"
+                        onClick={() => setOpen(false)}
+                      >
+                        {game.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </ScrollArea>
+    </div>
+  );
+};
 
 
 export default function Sidebar({ open, setOpen }: SidebarProps) {
@@ -478,3 +485,5 @@ export default function Sidebar({ open, setOpen }: SidebarProps) {
     </>
   );
 }
+
+    
