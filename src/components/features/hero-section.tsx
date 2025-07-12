@@ -23,7 +23,7 @@ export default function HeroSection() {
               <Link href="/new-games">🎯 New Games</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="transition-transform duration-300 hover:scale-105">
-              <Link href="/classroom">🏫 Classrooms</Link>
+              <a href="https://sites.google.com/view/classrooms-workspace/" target="_blank" rel="noopener noreferrer">🏫 Classrooms</a>
             </Button>
              <Button asChild size="lg" variant="outline" className="transition-transform duration-300 hover:scale-105">
               <Link href="/driving-games-unblocked">🚗 Driving Games</Link>

@@ -304,9 +304,10 @@ const gameCategories = [
   },
   {
     name: '🏫 Classroom Games',
-    href: '/classroom',
+    href: 'https://sites.google.com/view/classrooms-workspace/',
     icon: School,
-    games: [{ name: 'Math Blaster', href: '#' }, { name: 'Word Finder', href: '#' }],
+    isExternal: true,
+    games: [],
   },
    {
     name: '🚗 Driving Games',
@@ -420,17 +421,22 @@ const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
         {gameCategories.map((category) => (
           <AccordionItem value={category.href} key={category.href} className="border-b-border">
             <AccordionTrigger className="text-base hover:no-underline text-foreground hover:text-primary">
-              <Link
+              <a
                 href={category.href}
                 className="flex items-center gap-3"
                 onClick={(e) => {
-                  e.stopPropagation(); 
-                  setOpen(false);
+                  if (!category.isExternal) {
+                    e.preventDefault(); 
+                    // Let the AccordionTrigger handle the click for internal links
+                  }
+                  // For external links, the default 'a' tag behavior will trigger
                 }}
+                target={category.isExternal ? '_blank' : '_self'}
+                rel={category.isExternal ? 'noopener noreferrer' : ''}
               >
                 <category.icon className="h-5 w-5" />
                 {category.name}
-              </Link>
+              </a>
             </AccordionTrigger>
             <AccordionContent>
               <ul className="space-y-2 pl-8">
