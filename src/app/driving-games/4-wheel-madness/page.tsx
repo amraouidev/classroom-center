@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Drift Boss – Play Unblocked Online at School',
-  description: 'Play Drift Boss, the addictive one-button drift game, unblocked and free at school. No ads or installs required!',
+  title: '4 Wheel Madness – Play Unblocked Driving Game Online',
+  description: 'Play 4 Wheel Madness online for free! This unblocked driving game works on school Chromebooks, PCs, and mobile. No download or VPN needed.',
 };
 
 export default function GamePage() {
@@ -13,12 +13,12 @@ export default function GamePage() {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Drift Boss
+            4 Wheel Madness
           </h1>
         </div>
         <div className="mt-10 text-lg leading-8 text-muted-foreground space-y-6">
           <p>
-            Drift Boss is an easy yet addictive drifting game perfect for quick plays. Use perfect timing to drift around corners and stay on the track. This unblocked version works on school devices and is free to play anywhere!
+            4 Wheel Madness is one of the best free driving games available online. This game is optimized for smooth performance on school networks and works directly from your browser. No download, no sign-in—just fun!
           </p>
           <div className="text-center mt-8">
             <Button asChild>

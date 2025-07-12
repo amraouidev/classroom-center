@@ -69,7 +69,8 @@ const drivingGames = [
   { title: 'Race: Online City', href: '/race-online-city' },
   { title: 'Drive Online', href: '/drive-online' },
   { title: 'Slow Roads', href: '/slow-roads' },
-];
+].map(game => ({ ...game, href: `/driving-games${game.href}` }));
+
 
 export default function DrivingGamesUnblockedPage() {
   return (

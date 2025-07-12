@@ -44,9 +44,11 @@ const gameCategories = [
     href: '/driving-games-unblocked',
     icon: Car,
     games: [
-        { name: 'Drift Boss', href: '/drift-boss' }, 
-        { name: 'Eggy Car', href: '/eggy-car' },
-        { name: 'Slow Roads', href: '/slow-roads' }
+        { name: 'Drift Boss', href: '/driving-games/drift-boss' }, 
+        { name: 'Eggy Car', href: '/driving-games/eggy-car' },
+        { name: 'Slow Roads', href: '/driving-games/slow-roads' },
+        { name: 'Parking Fury 3', href: '/driving-games/parking-fury-3'},
+        { name: 'Poly Track', href: '/driving-games/poly-track'},
     ],
   },
   {
@@ -81,7 +83,7 @@ type SidebarProps = {
 };
 
 const SidebarContent = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
-  <div className="flex h-full flex-col text-foreground bg-card">
+  <div className="flex h-full flex-col text-card-foreground bg-card">
     <div className="flex h-16 items-center border-b border-border px-4">
       <Link href="/" className="flex items-center gap-2 font-semibold">
         <Puzzle className="h-6 w-6 text-primary" />
@@ -133,7 +135,7 @@ export default function Sidebar({ open, setOpen }: SidebarProps) {
     <>
       {/* Mobile Sidebar */}
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="left" className="w-64 p-0 lg:hidden bg-card border-r-0">
+        <SheetContent side="left" className="w-52 p-0 lg:hidden bg-card border-r-0">
           <SidebarContent setOpen={setOpen} />
         </SheetContent>
       </Sheet>
