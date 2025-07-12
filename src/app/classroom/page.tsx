@@ -4,6 +4,9 @@ export default function ClassroomPage() {
     <div className="bg-card border-t" id="classroom-center">
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8 text-muted-foreground">
         <div className="space-y-8 text-center">
+          <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            Unblocked Games for the Classroom
+          </h1>
           <h2 className="text-2xl font-bold text-foreground">
             ❄️ Unblocked Games Classroom Center G+ – The Go-To Destination for Free Online Fun ❄️
           </h2>

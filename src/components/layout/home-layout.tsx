@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Header from '@/components/layout/header';
 import Sidebar from '@/components/layout/sidebar';
 import BookmarkButton from '@/components/bookmark-button';
+import Footer from './footer';
 
 export default function HomeLayout({
   children,
@@ -17,7 +18,7 @@ export default function HomeLayout({
       <div className="flex flex-1 flex-col">
         <Header onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
         <main className="flex-grow">{children}</main>
-        {/* Footer might be added here or in specific page layouts if it's not global */}
+        <Footer />
       </div>
       <BookmarkButton />
     </div>

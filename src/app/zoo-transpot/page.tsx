@@ -16,6 +16,19 @@ export default function GamePage() {
             Zoo Transpot
           </h1>
         </div>
+
+        <div className="mt-10 rounded-lg border bg-card text-card-foreground shadow-sm">
+          <div className="flex aspect-video items-center justify-center">
+            <p className="text-muted-foreground">Game embed will be here</p>
+          </div>
+        </div>
+        
+        <div className="mt-8 text-center">
+            <div className="adsense-container h-24 bg-muted/50 flex items-center justify-center rounded-md">
+                <span className="text-muted-foreground">AdSense Placeholder</span>
+            </div>
+        </div>
+
         <div className="mt-10 text-lg leading-8 text-muted-foreground space-y-6">
           <p>
             Become a zoo transporter and deliver animals safely to the zoo. A fun and challenging unblocked driving game.

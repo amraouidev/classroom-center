@@ -16,6 +16,19 @@ export default function GamePage() {
             Big Truck 2
           </h1>
         </div>
+
+        <div className="mt-10 rounded-lg border bg-card text-card-foreground shadow-sm">
+          <div className="flex aspect-video items-center justify-center">
+            <p className="text-muted-foreground">Game embed will be here</p>
+          </div>
+        </div>
+        
+        <div className="mt-8 text-center">
+            <div className="adsense-container h-24 bg-muted/50 flex items-center justify-center rounded-md">
+                <span className="text-muted-foreground">AdSense Placeholder</span>
+            </div>
+        </div>
+
         <div className="mt-10 text-lg leading-8 text-muted-foreground space-y-6">
           <p>
             The sequel to the popular truck driving game. Navigate challenging terrains and deliver your cargo safely in Big Truck 2.

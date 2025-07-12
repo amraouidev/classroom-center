@@ -11,7 +11,6 @@ export default function Home() {
       <GameCategories />
       <TopPicks />
       <WhyChooseUs />
-      <Footer />
     </>
   );
 }
