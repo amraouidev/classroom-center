@@ -41,7 +41,7 @@ export default function GameCategories() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-headline font-bold tracking-tight text-foreground sm:text-4xl">
-            🎮 Game Categories
+            🎄Top Unblocked HTML5 Games Online!🎄
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
             Find your new favorite game from our diverse collection.
