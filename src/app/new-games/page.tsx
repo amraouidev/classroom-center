@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import GameCard from '@/components/game-card';
 
@@ -409,7 +410,22 @@ export default function NewGamesPage() {
           <h1 className="text-3xl font-headline font-bold tracking-tight text-foreground sm:text-4xl">
             🎮 New Games – Discover the Latest Unblocked Games
           </h1>
-          <div className="mt-6 mx-auto max-w-3xl text-lg leading-8 text-muted-foreground space-y-4">
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {newGames.map((game) => (
+            <GameCard
+              key={game.title}
+              imageSrc={game.imageSrc}
+              title={game.title}
+              description={game.description}
+              buttonText="Play Now"
+              href={game.href}
+              aiHint={game.aiHint}
+            />
+          ))}
+        </div>
+        <div className="text-center mt-16">
+          <div className="mx-auto max-w-3xl text-lg leading-8 text-muted-foreground space-y-4">
             <p>
               Welcome to the New Games section—your ultimate destination for the freshest unblocked games online. Whether you’re on a Chromebook at school or relaxing at home, this collection is updated regularly with the most exciting, trending, and safe-to-play titles on the web.
             </p>
@@ -440,19 +456,6 @@ export default function NewGamesPage() {
               ⭐ Bookmark this page to stay ahead of the curve with every new release.
             </p>
           </div>
-        </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {newGames.map((game) => (
-            <GameCard
-              key={game.title}
-              imageSrc={game.imageSrc}
-              title={game.title}
-              description={game.description}
-              buttonText="Play Now"
-              href={game.href}
-              aiHint={game.aiHint}
-            />
-          ))}
         </div>
       </div>
     </section>
