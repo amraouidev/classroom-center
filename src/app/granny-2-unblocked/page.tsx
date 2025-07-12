@@ -19,10 +19,10 @@ export default function Granny2UnblockedPage() {
                 Granny 2 Unblocked is an engaging and suspenseful online game that challenges your survival and problem-solving skills. Trapped in a haunted house, your mission is to escape without being caught by Granny, a terrifying character who will do everything to stop you.
             </p>
             <p>
-                This unblocked version allows you to play anywhere, whether at school, home, or work, without restrictions. With its thrilling gameplay, spine-chilling atmosphere, and clever puzzles, Granny Unblocked keeps you on edge every moment.
+                This unblocked version allows you to play anywhere, whether at school, home, or work, without restrictions. With its thrilling gameplay, spine-chilling atmosphere, and clever puzzles, Granny 2 Unblocked keeps you on edge every moment.
             </p>
             <p>
-                Perfect for fans of horror and escape room games, Granny Unblocked provides hours of entertainment while improving your critical thinking skills.
+                Perfect for fans of horror and escape room games, Granny 2 Unblocked provides hours of entertainment while improving your critical thinking skills. Experience the adrenaline rush and test your courage today!
             </p>
             <p className="font-bold text-accent">
                 Start your escape adventure now and play Granny 2 Unblocked for free!

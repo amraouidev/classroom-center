@@ -13,21 +13,21 @@ const topPicks = [
     description: 'Weave through traffic in this high-speed retro racer.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'pixel art race',
-    href: '#',
+    href: '/driving-games',
   },
   {
     title: 'Block Stacker',
     description: 'A challenging puzzle game that will test your logic.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'colorful blocks',
-    href: '#',
+    href: '/puzzle-games',
   },
   {
     title: 'Galactic Battle',
     description: 'Fight for survival in this epic space shooter.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'space battle',
-    href: '#',
+    href: '/action-games',
   },
   {
     title: 'Granny Creepy House',
@@ -41,7 +41,7 @@ const topPicks = [
     description: 'Show off your skills and make epic shots.',
     imageSrc: 'https://placehold.co/400x300.png',
     aiHint: 'basketball court',
-    href: '#',
+    href: '/sports-games',
   },
 ];
 
