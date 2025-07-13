@@ -15,9 +15,9 @@ export default function GrannyUnblockedGamePage() {
           </h1>
         </div>
 
-        <div className="mt-10 rounded-lg border bg-card text-card-foreground shadow-sm">
-          <div className="flex aspect-video items-center justify-center">
-            <p className="text-muted-foreground">Game embed will be here</p>
+        <div className="mt-10 rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden">
+          <div className="aspect-video">
+            <iframe className="w-full h-full" id="game-area" src="https://ubg77.github.io/fix/boxrob3/" width="720" height="450" scrolling="no" frameBorder="0" allowFullScreen={true}></iframe>
           </div>
         </div>
         
