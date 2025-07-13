@@ -8,17 +8,13 @@ export const metadata: Metadata = {
 export default function GrannyUnblockedGamePage() {
   return (
     <section className="py-16 sm:py-20">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Granny Unblocked
-          </h1>
-        </div>
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          Granny Unblocked
+        </h1>
 
-        <div className="mt-10 rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden">
-          <div className="aspect-video">
-            <iframe className="w-full h-full" id="game-area" src="https://ubg77.github.io/fix/boxrob3/" width="720" height="450" scrolling="no" frameBorder="0" allowFullScreen={true}></iframe>
-          </div>
+        <div className="mt-10 rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden flex justify-center">
+            <iframe src="https://sz-games.github.io/Games8/GRANNY/" width="900px" height="600px" frameBorder="0" scrolling="no" allowFullScreen></iframe>
         </div>
         
         <div className="mt-8 text-center">
