@@ -400,6 +400,13 @@ const newGames = [
     aiHint: 'horror escape',
     href: '/granny-online',
   },
+  {
+    title: 'Break Your Computer',
+    description: 'A fun stress-relief game where you get to smash a virtual computer.',
+    imageSrc: 'https://placehold.co/400x300.png',
+    aiHint: 'broken computer',
+    href: '/new-games/break-your-computer',
+  },
 ];
 
 export default function NewGamesPage() {

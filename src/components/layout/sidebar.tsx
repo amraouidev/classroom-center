@@ -302,6 +302,7 @@ const gameCategories = [
       { name: 'Vex 8', href: '#' },
       { name: 'Sonic Revert', href: '#' },
       { name: 'Sky Race 3D Unblocked', href: '#' },
+      { name: 'Break Your Computer', href: '/new-games/break-your-computer' },
     ],
   },
   {

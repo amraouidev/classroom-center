@@ -1,0 +1,45 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+
+export const metadata: Metadata = {
+  title: 'Break Your Computer – Unblocked Fun Game',
+  description: 'Play Break Your Computer unblocked for free! A fun stress-relief game where you can smash a virtual computer.',
+};
+
+export default function GamePage() {
+  return (
+    <section className="py-12 sm:py-16">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            Break Your Computer
+          </h1>
+        </div>
+
+        <div className="mt-10 rounded-lg border bg-card text-card-foreground shadow-sm">
+          <div className="flex aspect-video items-center justify-center">
+            <p className="text-muted-foreground">Game embed will be here</p>
+          </div>
+        </div>
+        
+        <div className="mt-8 text-center">
+            <div className="adsense-container h-24 bg-muted/50 flex items-center justify-center rounded-md">
+                <span className="text-muted-foreground">AdSense Placeholder</span>
+            </div>
+        </div>
+
+        <div className="mt-10 text-lg leading-8 text-muted-foreground space-y-6">
+          <p>
+            A fun stress-relief game where you get to smash a virtual computer.
+          </p>
+          <div className="text-center mt-8">
+            <Button asChild>
+                <Link href="/new-games">More New Games</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
