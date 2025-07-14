@@ -1,29 +1,25 @@
 
 'use client';
 
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Script from 'next/script';
-import { useEffect, useRef } from 'react';
+import { useRef, useCallback } from 'react';
 
 export default function GamePage() {
   const gameContainerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    // Ruffle is loaded via the Script component and will be available on the window object
+  const onRuffleLoad = useCallback(() => {
     const RufflePlayer = (window as any).RufflePlayer;
     if (RufflePlayer && gameContainerRef.current) {
       const ruffle = RufflePlayer.newest();
       const player = ruffle.createPlayer();
       
-      // Clear the container and append the player
       gameContainerRef.current.innerHTML = '';
       gameContainerRef.current.appendChild(player);
       
       player.load("https://cdn.jsdelivr.net/gh/sema-ver-sem/x6@main/bash-the-computer.swf");
 
-      // Make the player responsive
       player.style.width = '100%';
       player.style.height = '100%';
     }
@@ -31,7 +27,7 @@ export default function GamePage() {
 
   return (
     <>
-      <Script src="https://unpkg.com/@ruffle-rs/ruffle" strategy="beforeInteractive" />
+      <Script src="https://unpkg.com/@ruffle-rs/ruffle" strategy="lazyOnload" onReady={onRuffleLoad} />
       <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
